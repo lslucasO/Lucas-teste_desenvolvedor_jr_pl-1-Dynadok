@@ -190,7 +190,7 @@ Body:
 
 ```json
 {
-  "text": "Texto grande aqui...",
+  "text": "Diagnósticos médicos e decisões jurídicas: o papel da IA A justiça e a Medicina são considerados campos de alto risco. Neles é mais urgente do que em qualquer outra área estabelecer sistemas para que os humanos tenham sempre a decisão final. Os especialistas em IA trabalham para garantir a confiança dos usuários, para que o sistema seja transparente, que proteja as pessoas e que os humanos estejam no centrodas decisões. Aqui entra em jogo o desafio do doutor centauro. Centauros são modelos híbridos de algoritmo que combinam análise formal de máquina e intuição humana. Um médico centauro + um sistema de IA melhora as decisões que os humanos tomam por conta própria e que os sistemas de IA tomam por conta própria. O médico sempre será quem aperta o botão final; e o juiz quem determina se uma sentença é justa.",
   "lang": "pt"
 }
 ```
@@ -207,8 +207,8 @@ Resposta `201`:
   "message": "Tarefa criada com sucesso!",
   "task": {
     "id": 1,
-    "text": "Texto grande aqui...",
-    "summary": "Resumo gerado...",
+    "text": "Diagnósticos médicos e decisões jurídicas: o papel da IA A justiça e a Medicina são considerados campos de alto risco. Neles é mais urgente do que em qualquer outra área estabelecer sistemas para que os humanos tenham sempre a decisão final. Os especialistas em IA trabalham para garantir a confiança dos usuários, para que o sistema seja transparente, que proteja as pessoas e que os humanos estejam no centrodas decisões. Aqui entra em jogo o desafio do doutor centauro. Centauros são modelos híbridos de algoritmo que combinam análise formal de máquina e intuição humana. Um médico centauro + um sistema de IA melhora as decisões que os humanos tomam por conta própria e que os sistemas de IA tomam por conta própria. O médico sempre será quem aperta o botão final; e o juiz quem determina se uma sentença é justa.",
+    "summary": "Na medicina e no direito, áreas de alto risco, é crucial que os humanos mantenham o controle final das decisões. Especialistas em IA desenvolvem sistemas transparentes e confiáveis, centrando-se no usuário e na proteção das pessoas. O conceito de \"doutor centauro\" representa um modelo híbrido que combina a análise de máquinas com a intuição humana, melhorando as decisões tanto dos profissionais quanto dos sistemas de IA. No entanto, o médico e o juiz permanecem como os responsáveis pelas decisões finais.",
     "lang": "pt"
   }
 }
@@ -229,14 +229,7 @@ Erros comuns:
 {
   "error": "Campo \"text\" e obrigatorio."
 }
-```
 
-- `500` quando falha integracao com Python/LLM:
-
-```json
-{
-  "error": "Ocorreu um erro ao criar a tarefa."
-}
 ```
 
 ### 3) Listar tarefas
@@ -365,6 +358,6 @@ curl --location --request DELETE 'http://localhost:3005/tasks/1'
 
 - As tarefas sao armazenadas em `node-api/tasks.json`.
 - O arquivo e carregado na inicializacao do Node.
-- O arquivo e atualizado a cada criacao, atualizacao e remocao.
+- O arquivo e atualizado a cada criacao, atualizacao e remoção.
 
 ---
